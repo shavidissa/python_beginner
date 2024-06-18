@@ -31,3 +31,8 @@ print(my_friends_food)
 
 my_pizza = ["cheese", "dragon", "hawaian"]
 
+for pizza in my_pizza:
+    print(f"This is my pizza list: {pizza}")
+
+
+
