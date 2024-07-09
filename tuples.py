@@ -6,7 +6,8 @@ print(dimensions[0])
 print(dimensions[1])
 
 # Tuples are dfined using the trailing comma (,). 
-# If you only hav one element in the tuple, make sure to add a comma after that value to say that it is a tuple.
+# If you only hav one element in the tuple, make sure to add a comma after that 
+# value to say that it is a tuple.
 
 # Looping through the values in a tuple
 print("\nOrginal dimensions")

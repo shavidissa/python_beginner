@@ -1,8 +1,5 @@
 #for i in range(6):
     #print(i)
-
-
-
 squares = []
 
 # Get the list of the first ten numbers
