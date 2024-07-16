@@ -26,16 +26,16 @@ for person in favorite_numers:
 # Excercise 6.3  :Glossary
 
 shavi_dictionary = {
-    "else": "The else block is a catch all statement. If you have a condition" 
-            + "to match, finish with an elif. This way you know the code runs" 
-            + " under the correct conditions.",
+    "else": "The else block is a catch all statement. If you have a condition"
+                "to match, finish with an elif. This way you know the code runs"
+                "under the correct conditions.",
     "tuples": "A list that cannot change or an immutable list is called a tuple."
-                + "Just like a list but you use parantheses ().Tuples are defined"
-                + "using the trailing comma (,). If you only have one element" 
-                + "in the tuple, make sure to add a comma after that value to"
-                + "say that it is a tuple.",
+                "Just like a list but you use parantheses ().Tuples are defined"
+                "using the trailing comma (,). If you only have one element" 
+                "in the tuple, make sure to add a comma after that value to"
+                "say that it is a tuple.",
     "sort method": "Looping through a disctionars in a particaulr order using"
-                    + "the sort method."
+                    "the sort method."
 }
 
 for word in shavi_dictionary:
