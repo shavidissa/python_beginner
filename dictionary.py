@@ -58,5 +58,47 @@ print(f"\nSarah's favorite language is: {favorite_language['sarah'].title()}")
 
 # Using the get method to 
 
-point_value = alien_0.get("points")
+point_value = alien_0.get("x_position")
 print(point_value)
+
+# Looping through the favorite langauges.
+print("\nLooping through the favorite language dictionary.")
+for name, language in favorite_language.items():
+    print(f"{name.title()}'s favourite langugate is: {language.title()}")
+
+# Getting only the keys in a dictionary using the keys method.
+
+print("\nGet the key in a dictionary.")
+for name in favorite_language.keys():
+    print(name.title())
+
+# Only printing a message if they are our friends.
+
+friends = ["phil", "sarah"]
+
+for name in favorite_language.keys():
+    print(f"Hi {name.title()}")
+
+    if name in friends:
+        language = favorite_language[name].title()
+        print(f"\t{name.title()}, I see you love {language}")
+
+if "erin" not in favorite_language.keys():
+    print("Hi Erin, please take the poll!")
+
+# Looping through a disctionars in a particaulr order using the sort method.
+
+for name in sorted(favorite_language.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+# Looping through the values in a dictionary
+
+print("\nThe following languages have been mentioned - using values():")
+for language in favorite_language.values():
+    print(language.title())
+
+# Using the set method to group the same values and print a value only once.
+
+print("\nThe following languages have been mentioned - using set():")
+for language in set(favorite_language.values()):
+    print(language.title())
