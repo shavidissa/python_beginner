@@ -8,7 +8,7 @@ print(f"Let me see if I can find you a {car_type}.")
 number_of_guests = input("\nHow many people are in your dinner group? ")
 number_of_guests = int(number_of_guests)
 
-if number_of_guests < 8:
+if number_of_guests <= 8:
     print("Thank you! Your table is ready for you.")
 else:
     print("I am sorry! You need to wait till your table is ready.")
