@@ -67,5 +67,5 @@ while True:
         print("\nThe ticket costs 15 dollars.")
         break
     else:
-        print("You enter for free")
+        print("You enter for free.")
         break
