@@ -69,3 +69,28 @@ while True:
     else:
         print("You enter for free.")
         break
+
+# Exercise 7.4: Movie tickets - Options 
+print("-----Option 3 --------------")
+
+prompt = "How old are you? "
+prompt += "\n(Enter `quit` after you have entered the ages for your group.)"
+
+
+
+active = True
+
+while active:
+    age = input(prompt)
+
+    if age == "quit":
+        break
+
+    age = int(age)
+    if age < 3:
+        print("You enter for free.")
+    elif age < 13:
+        print("You have to pay 10 dollars.")
+    else:
+        print("you have to pay 15 dollars")
+
