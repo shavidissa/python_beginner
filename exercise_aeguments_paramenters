@@ -1,11 +1,43 @@
+# Exercise 1
 def display_message():
     message = "Hello this function prints a message"
     print(message)
 
 display_message()
 
-
+# Exercise 2
 def favorite_book(title):
     print(f"One of my favorite books is {title.title()}.")
 
 favorite_book("Alice in Wonderland")
+
+# Exercise 3
+
+def make_shirt(size, print_message):
+    """Display information about the shirt"""
+    print(f"\nYour ordered a {size} shirt, and it has the message" 
+          + f" {print_message}")
+
+make_shirt("medium", "I want to become a small")
+make_shirt(size="large", print_message="Buhahaha")
+
+# Exercise 4
+
+def make_shirt(print_message="I love Python", size="Large"):
+    """Display information about the shirt"""
+    print(f"\nYour ordered a {size} shirt, and it has the message" 
+          + f" {print_message}")
+    
+make_shirt()
+make_shirt(size="medium")
+make_shirt("Anything you said", "small")
+
+# Exercise 5
+
+def describe_city(name, country="Sri Lanka"):
+    """Display information about the city"""
+    print(f"{name.title()} is in {country.title()}")
+
+describe_city("seattle", "USA")
+describe_city("Colombo")
+describe_city("GALLE")
