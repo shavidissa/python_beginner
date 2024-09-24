@@ -1,0 +1,11 @@
+def display_message():
+    message = "Hello this function prints a message"
+    print(message)
+
+display_message()
+
+
+def favorite_book(title):
+    print(f"One of my favorite books is {title.title()}.")
+
+favorite_book("Alice in Wonderland")
