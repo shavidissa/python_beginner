@@ -41,3 +41,21 @@ def describe_city(name, country="Sri Lanka"):
 describe_city("seattle", "USA")
 describe_city("Colombo")
 describe_city("GALLE")
+
+# Exercise 6
+
+def city_country(city, country):
+    "Display the information"
+    return f"{city.title()}, {country.title()}"
+    
+
+
+print("\nExercise 6")
+answer = city_country("colombo", "Sri Lanka")
+print(answer)
+
+answer = city_country("seattle", "USA")
+print(answer)
+
+answer = city_country("sydney", "Australia")
+print(answer)
