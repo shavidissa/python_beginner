@@ -59,3 +59,49 @@ print(answer)
 
 answer = city_country("sydney", "Australia")
 print(answer)
+
+# Exercise 7
+
+def make_album(artist_name, album_title, no_of_songs = None):
+    
+    music_album = {"artist": artist_name.title(), "album": album_title.title()}
+
+    if no_of_songs:
+        music_album["tracks"] = no_of_songs
+    return music_album
+
+album = make_album("sabrina", "please please")
+print(album)
+
+album = make_album("Komaliye", "BnS", 34)
+print(album)
+
+album = make_album("Kelle", "Yohani")
+print(album)
+
+def make_album(artist, title, tracks=0):
+    """Build a dictionary containing information about an album."""
+    album_dict = {
+        'artist': artist.title(),
+        'title': title.title(),
+        }
+    if tracks:
+        album_dict['tracks'] = tracks
+    return album_dict
+
+album = make_album('metallica', 'ride the lightning')
+print(album)
+
+album = make_album('beethoven', 'ninth symphony')
+print(album)
+
+album = make_album('willie nelson', 'red-headed stranger')
+print(album)
+
+album = make_album('iron maiden', 'piece of mind', tracks=8)
+print(album)
+
+
+
+
+
