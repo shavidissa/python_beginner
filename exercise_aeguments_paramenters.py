@@ -60,9 +60,10 @@ print(answer)
 answer = city_country("sydney", "Australia")
 print(answer)
 
-# Exercise 7
+# Exercise 7 and 8
 
 def make_album(artist_name, album_title, no_of_songs = None):
+    "Display the information"
     
     music_album_dict = {
         "artist": artist_name.title(), 
@@ -70,26 +71,26 @@ def make_album(artist_name, album_title, no_of_songs = None):
         }
 
     if no_of_songs:
-        music_album_dict["tracks"] = no_of_songs
-    return music_album_dict
+        music_album["tracks"] = no_of_songs
+    return music_album
 
 while True:
-
-    artist = input("Enter the artist name. \n (Enter q to quit.): ")
+    artist = input("Enter the artist's name. \n Print q to quit: ")
     if artist == "q":
         break
-
-    album_name = input("Enter the name of the album. \n (Enter q to quit.): ")
+    
+    album_name = input("Enter the title of the album. \n Print q to quit: ")
     if album_name == "q":
         break
-
+        
+    
     album = make_album(artist, album_name)
-    print(album)
 
-print("\n Thank you for responding")
+#album = make_album("sabrina", "please please")
+#print(album)
 
+#album = make_album("Komaliye", "BnS", 34)
+#print(album)
 
-
-
-
-
+#album = make_album("Kelle", "Yohani")
+print(album)
